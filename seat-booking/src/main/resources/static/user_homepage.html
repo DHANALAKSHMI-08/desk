@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Homepage</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { display: flex; }
+        .sidebar { width: 200px; background-color: #f4f4f4; padding: 20px; }
+        .main-content { flex: 1; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Booking History</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h1>Book Your Seat</h1>
+            <form id="booking-form">
+                <label for="employee-id">Employee ID:</label>
+                <input type="number" id="employee-id" required minlength="7" maxlength="7"><br><br>
+
+                <label for="month">Select Month:</label>
+                <select id="month">
+                    <option value="January">January</option>
+                    <!-- Add remaining months -->
+                </select><br><br>
+
+                <label for="type">Booking Type:</label>
+                <select id="type">
+                    <option value="Regular">Regular</option>
+                    <option value="Irregular">Irregular</option>
+                </select><br><br>
+
+                <button type="submit">Save</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
